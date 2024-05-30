@@ -1,0 +1,30 @@
+body{ 
+  background-image: url('./assets/background.jpg') ;
+  background-size: 48%;
+  max-width: 100vw;
+  max-height: 100vh;
+  position: relative;
+  display: flex;
+  align-content: center;
+}
+.attemps{
+  padding-left: 20%;
+  max-width: 100%;
+}
+.app{
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  color: black;
+  font-size: 30px;
+  align-content: center;
+  
+}
+/* .title{
+  position: absolute;
+  top: 20px;
+  left: 50%;
+} */
+.board{
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+}
