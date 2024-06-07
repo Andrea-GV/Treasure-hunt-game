@@ -1,30 +1,51 @@
 body{ 
   background-image: url('./assets/background.jpg') ;
   background-size: 48%;
-  max-width: 100vw;
-  max-height: 100vh;
+  max-width: 100%;
+  max-height: 100%;
   position: relative;
   display: flex;
-  align-content: center;
+  align-items: center;
 }
 .attemps{
-  padding-left: 20%;
+  padding-left: 37%;
   max-width: 100%;
+  font-size: 30px;
+}
+span{
+  color: rgb(223, 39, 39);
+  font-size: 48px;
 }
 .app{
   font-family: Georgia, 'Times New Roman', Times, serif;
   color: black;
   font-size: 30px;
   align-content: center;
-  
+  max-width: 100%;
+  max-height: 100%;
 }
-/* .title{
-  position: absolute;
-  top: 20px;
-  left: 50%;
-} */
 .board{
   display: flex;
   flex-wrap: wrap;
-  align-items: center;
+  align-content: center;
+  margin: 1%;
+}
+button {
+  border-radius: 8px;
+  border: 1px solid transparent;
+  padding: 0.6em 1.2em;
+  margin: 0% 40%;
+  /* margin-bottom: 0.5em;
+  margin-left: 7em; */
+  font-size: 16px;
+  font-weight: 500;
+  font-family: inherit;
+  background-color: #1a1a1a;
+  color: white;
+  /* cursor: pointer;
+  transition: border-color 0.25s; */
+}
+
+button:hover {
+  background-color: #676464;
 }

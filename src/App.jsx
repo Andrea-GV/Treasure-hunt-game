@@ -1,25 +1,29 @@
 import { useState } from 'react'
 import './App.css'
 import Board from './board/Board';
+import { useCallback } from 'react';
 
 
 function App() {
 
   const [attempts, setAttempts] = useState(0);
+  const [gameStarted, setGameStarted] = useState(false);
+
   const handleAttempts = () => {
     setAttempts(prevAttempts => prevAttempts + 1)
   }
-  // const handlePrompt = () => {
-  //   setPrompt()
-  // }
+  const handleReset = useCallback(() => {
+    setAttempts(0);
+    setGameStarted(false);
+  }, [setAttempts, setGameStarted]);
 
   return (
     <>
       <section className='app'>
-        <h2 className='attemps'>Attemps: <span>{attempts}</span></h2>
-        {/* <button onClick={handlePrompt}>Start</button> */}
-        {/* <button onClick={handleReset}>Reset</button> */}
-        <Board className="board" onAttempt={handleAttempts}></Board>
+        <h1>🏴‍☠️ Welcome to the treasure hunt! 🏴‍☠️</h1>
+        <h2 className='attemps'>Attemps: <span>{attempts} 🔥</span></h2>
+        <Board className="board" onAttempt={handleAttempts} onReset={handleReset} gameStarted={gameStarted} setGameStarted={setGameStarted}></Board>
+        <button onClick={handleReset}> Reset Game ☠️ </button>
       </section>
 
     </>
