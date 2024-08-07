@@ -2,6 +2,11 @@
 
 <img src="https://github.com/Andrea-GV/Treasure-hunt-game/blob/master/Captura%20de%20pantalla%202024-06-03%20105139.png">
 
+## ** Update August 24 **
+I deployed the game just to make it easier to try and play anytime, anywhere not needing to install any library nor copy the repository on your computer.
+Here's the link to play the game:
+## ➡️ https://treasure-hunt-game-mu.vercel.app/ ⬅️
+
 ## Description
 
 This project was created for fun and to improve my programming skills. The Treasure Hunt game is built with React, using JavaScript, and styled with CSS.
